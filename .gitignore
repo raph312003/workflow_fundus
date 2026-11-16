@@ -1,0 +1,9 @@
+/last_env
+/preproc
+*.json
+*.csv
+*.jpg
+*.pyc
+*.jsonl
+*.pth
+*.xlsx
