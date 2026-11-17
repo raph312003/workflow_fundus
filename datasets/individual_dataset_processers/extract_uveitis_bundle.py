@@ -7,8 +7,8 @@ from pathlib import Path
 INNER_ZIPS = {
     # "deepdrid": "DeepDRiD.zip",
     # "eyepacs": "eyepacs_1024.zip",
-    "fgadr": "FGADR.zip",
-    # "uwf": "UWF.zip",
+    # "fgadr": "FGADR.zip",
+    "uwf": "UWF.zip",
 }
 
 
@@ -152,17 +152,17 @@ def main() -> None:
                 raise SystemExit(f"Missing {name} in {zip_path}")
             zf.extract(name, work_dir)
 
-    process_deepdrid(work_dir / INNER_ZIPS["deepdrid"], out_root / "deepdrid", args.force)
-    (work_dir / INNER_ZIPS["deepdrid"]).unlink()
-    print("DeepDRiD extracted.")
+    # process_deepdrid(work_dir / INNER_ZIPS["deepdrid"], out_root / "deepdrid", args.force)
+    # (work_dir / INNER_ZIPS["deepdrid"]).unlink()
+    # print("DeepDRiD extracted.")
 
-    process_eyepacs(work_dir / INNER_ZIPS["eyepacs"], out_root / "eyepacs", args.force)
-    (work_dir / INNER_ZIPS["eyepacs"]).unlink()
-    print("EyePACS extracted.")
+    # process_eyepacs(work_dir / INNER_ZIPS["eyepacs"], out_root / "eyepacs", args.force)
+    # (work_dir / INNER_ZIPS["eyepacs"]).unlink()
+    # print("EyePACS extracted.")
 
-    process_fgadr(work_dir / INNER_ZIPS["fgadr"], out_root / "fgadr", args.force)
-    (work_dir / INNER_ZIPS["fgadr"]).unlink()
-    print("fgadr extracted.")
+    # process_fgadr(work_dir / INNER_ZIPS["fgadr"], out_root / "fgadr", args.force)
+    # (work_dir / INNER_ZIPS["fgadr"]).unlink()
+    # print("fgadr extracted.")
 
     process_uwf(
         work_dir / INNER_ZIPS["uwf"],

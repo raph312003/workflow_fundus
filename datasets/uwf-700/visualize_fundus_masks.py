@@ -145,7 +145,7 @@ def main():
     parser.add_argument(
         "--config",
         type=Path,
-        default=Path("configs/stage0_preprocess.yaml"),
+        default=Path("configs/preprocess.yaml"),
         help="Preprocess config with roi.sam prompts",
     )
     parser.add_argument("--max-images", type=int, default=0)

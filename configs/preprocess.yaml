@@ -12,7 +12,7 @@ output:
 roi:
   method: threshold
   method_by_dataset:
-    uwf700: sam2_prompted
+    uwf700: sam_prompted
   downsample_max_side: 768
   sat_threshold: 18
   crop_pad_px: 12
@@ -70,7 +70,7 @@ roi:
 #     stats_path: preproc/ref/regular_fundus_color_stats.json
 
 normalize:
-  method: zscore_rgb # grayworld, clahe_luminance
+  method: clahe_luminance # grayworld, clahe_luminance, zscore_rgb
 
 resize:
   global_size: 1024

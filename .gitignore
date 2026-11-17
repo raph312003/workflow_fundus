@@ -1,5 +1,8 @@
-/last_env
+/.last_env
 /preproc
+runs/
+eval/
+third_party/
 *.json
 *.csv
 *.jpg
@@ -7,3 +10,5 @@
 *.jsonl
 *.pth
 *.xlsx
+*.zip
+
